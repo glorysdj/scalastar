@@ -1,7 +1,7 @@
 /**
  *
  */
-package basics.oo.recommended
+package basics.oo.zother
 
 /**
  * @author dongjie.shi

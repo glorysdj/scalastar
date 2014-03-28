@@ -1,7 +1,7 @@
 /**
  *
  */
-package basics.oo.simulation
+package basics.oo.zother
 
 /**
  * @author dongjie.shi

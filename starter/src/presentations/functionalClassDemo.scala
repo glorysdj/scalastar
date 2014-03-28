@@ -1,12 +1,43 @@
 /**
  *
  */
-package basics.oo
+package presentations
 
 /**
  * @author dongjie.shi
  *
  */
+object functionalClassDemo extends App {
+  //val r = new Rational(2, 0)
+  val r = new Rational(5)
+  //println(r.g)
+  println(r.number)
+  println(r.denom)
+
+  val r1 = new Rational(1, 2)
+  val r2 = new Rational(4, 6)
+  println(r1 + r2)
+  println(r1 - r2)
+  println(r1 * r2)
+  println(r1 / r2)
+  println(r1 + 2)
+  println(r1 - 2)
+  println(r1 * 2)
+  println(r1 / 2)
+  println(r1 + r1 * r2)
+
+  implicit def intToRational(x: Int) = new Rational(x)
+  println(2 + r1)
+  println(2 - r1)
+  println(2 * r1)
+  println(2 / r1)
+
+  println(r1 < r2)
+  println(r1 <= r2)
+  println(r1 > r2)
+  println(r1 >= r2)
+}
+
 class Rational(n: Int, d: Int) extends Ordered[Rational] {
   require(d != 0)
 
@@ -47,30 +78,4 @@ class Rational(n: Int, d: Int) extends Ordered[Rational] {
 
   private def gcd(a: Int, b: Int): Int =
     if (b == 0) a else gcd(b, a % b)
-}
-
-object Rational extends App {
-  //val r = new Rational(2, 0)
-  val r1 = new Rational(1, 2)
-  val r2 = new Rational(4, 6)
-  println(r1 + r2)
-  println(r1 - r2)
-  println(r1 * r2)
-  println(r1 / r2)
-  println(r1 + 2)
-  println(r1 - 2)
-  println(r1 * 2)
-  println(r1 / 2)
-  println(r1 + r1 * r2)
-
-  implicit def intToRational(x: Int) = new Rational(x)
-  println(2 + r1)
-  println(2 - r1)
-  println(2 * r1)
-  println(2 / r1)
-  
-  println(r1 < r2)
-  println(r1 <= r2)
-  println(r1 > r2)
-  println(r1 >= r2)
 }
