@@ -1,7 +1,7 @@
 /**
  *
  */
-package oo.traits
+package core.oo.traits
 
 /**
  * @author donshi

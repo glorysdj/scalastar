@@ -1,4 +1,4 @@
-package oo.traits
+package core.oo.traits
 
 import scala.collection.mutable.ArrayBuffer
 

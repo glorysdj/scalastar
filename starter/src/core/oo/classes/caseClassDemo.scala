@@ -1,4 +1,4 @@
-package oo.classes
+package core.oo.classes
 
 /**
  * @author dongjie.shi

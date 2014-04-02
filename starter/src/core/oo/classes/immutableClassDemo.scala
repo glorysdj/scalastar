@@ -1,7 +1,7 @@
 /**
  *
  */
-package oo.classes
+package core.oo.classes
 
 /**
  * @author dongjie.shi
@@ -54,7 +54,7 @@ object Rational {
   def apply(n: Int) = new Rational(n)
 }
 
-object functionalClassDemo extends App {
+object immutableClassDemo extends App {
   val r1 = new Rational(1, 2)
   val r2 = Rational(4, 6)
   println(r1 + r2)

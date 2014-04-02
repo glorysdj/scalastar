@@ -1,7 +1,7 @@
 /**
  *
  */
-package presentations
+package core.scalability
 
 /**
  * @author dongjie.shi

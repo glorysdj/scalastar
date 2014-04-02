@@ -1,7 +1,7 @@
 /**
  *
  */
-package oo.objects
+package core.oo.objects
 
 import scala.collection.mutable.Map
 

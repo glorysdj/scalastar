@@ -1,4 +1,4 @@
-package staticTyped
+package core.scalability
 
 /**
  * @author dongjie.shi
