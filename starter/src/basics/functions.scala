@@ -24,4 +24,7 @@ object functions extends App {
 
   def max(x: Int, y: Int): Int = { if (x > y) x else y }
   println(max(2, 5))
+  
+  def echo(x: String*) = x.foreach(println _)
+  echo("hello", "scala")
 }
