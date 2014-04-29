@@ -15,13 +15,13 @@ case class Time(time: Long) {
   def alreadyExists(): Boolean = { System.nanoTime >= time }
 }
 
-case class Death
-case class Water {
+case class Death()
+case class Water() {
   def disappearIn(x: AnyRef): Unit = {}
 }
 
-case class World {
-  def getUgly():World with Ugly = new World with Ugly
+case class World() {
+  def getUgly(): World with Ugly = new World with Ugly
   def extinguish(): Unit = {}
 }
 
@@ -41,8 +41,8 @@ object borgesDemo extends App {
   //死就是水消失在水里.
   val death = Death()
   val water = Water()
-  death == (water disappearIn water) 
-  
+  death == (water disappearIn water)
+
   //世界先是变丑 然后熄灭
   val world = World()
   ((world getUgly) extinguish)

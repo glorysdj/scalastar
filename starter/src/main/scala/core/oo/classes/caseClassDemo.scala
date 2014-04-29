@@ -6,7 +6,7 @@ package core.oo.classes
  * this is a example of sealed and case class
  * 1. factory method: no new need
  * 2. all arguments in the parameter list of a case class implicitly get a val prefix, so they are maintained as fields
- * 3. the compiler adds “natural” implementations of methods toString, hashCode, and equals to your class
+ * 3. the compiler adds natural implementations of methods toString, hashCode, and equals to your class
  * 4. the compiler adds a copy method to your class for making modified copies.
  */
 sealed abstract class Expr

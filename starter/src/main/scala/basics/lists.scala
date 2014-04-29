@@ -12,7 +12,7 @@ object lists extends App {
   println(List.range(1, 5))
   println(List.range(1, 5, 2))
   println(List.range(9, 5, -2))
-  println(List.make(6, "hello"))
+  //println(List.make(6, "hello"))
 
   println("---------:: & :::, ++ & ++:")
   println(0 :: List(1, 2, 3) ::: List(6))
