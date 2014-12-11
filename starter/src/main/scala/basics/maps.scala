@@ -12,6 +12,7 @@ import scala.collection.immutable.TreeSet
 object maps extends App {
   val nums = Map("i" -> 1, "ii" -> 2)
   println(nums)
+  println(nums + ("ii" -> 333))
   println(nums.size)
   println(nums.contains("iv"))
   println(nums.keySet)
@@ -20,6 +21,10 @@ object maps extends App {
   println(nums - ("i"))
   println(nums ++ List("iii" -> 3, "iv" -> 4))
   println(nums -- List("i", "iv"))
+  
+  for(key <- nums.keySet){
+    println(key, nums(key), nums.keySet.toSeq.indexOf(key))
+  }
 
   import scala.collection.mutable.Map
   val words = Map.empty[String, Int]

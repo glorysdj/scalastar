@@ -12,7 +12,7 @@ object lists extends App {
   println(List.range(1, 5))
   println(List.range(1, 5, 2))
   println(List.range(9, 5, -2))
-  //println(List.make(6, "hello"))
+  println(List.range(0, 10))
 
   println("---------:: & :::, ++ & ++:")
   println(0 :: List(1, 2, 3) ::: List(6))
@@ -87,10 +87,15 @@ object lists extends App {
   println(list.scanRight(5)(_ - _))
 
   println("---------collect and partition")
+  println(list)
   println(list collect { case x if x % 2 == 0 => -x; case x => x })
   println(list.partition(_ > 3))
 
   println("---------flatMap & flatten")
   println(list.flatMap(x => List(x - 1, x, x + 1)))
   println(List(List(0, 1, 2), List(1, 2, 3), List(2, 3, 4), List(3, 4, 5), List(4, 5, 6)).flatten)
+  
+  val list2 = List(1,2,3,4,5,6,7,8)
+  val list3 = list2.zipWithIndex
+  println(list3)
 }

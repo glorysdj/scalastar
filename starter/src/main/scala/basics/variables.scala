@@ -12,6 +12,4 @@ object variables extends App {
   println(b)
   b = "Hello Scala"
   println(b)
-  
-  
 }
