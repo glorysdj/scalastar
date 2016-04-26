@@ -31,6 +31,7 @@ object patternMatchingDemo extends App {
     case m: Map[_, _] => m.size
     case a: Array[Int] => a.size
     case pi => pi
+    case x if(true)=>pi
     //case _ => x
   }
   println(find(Math.PI), find(pi))

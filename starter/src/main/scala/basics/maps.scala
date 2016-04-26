@@ -16,7 +16,7 @@ object maps extends App {
   println(nums.size)
   println(nums.contains("iv"))
   println(nums.keySet)
-  println(nums.values)
+  println("sum", nums.values.sum)
   println(nums + ("iii" -> 3))
   println(nums - ("i"))
   println(nums ++ List("iii" -> 3, "iv" -> 4))

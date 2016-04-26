@@ -12,4 +12,10 @@ object variables extends App {
   println(b)
   b = "Hello Scala"
   println(b)
+
+  val s = "safsd.sf.sdf.sdf"
+  val index = s.indexOf('.')
+  println(index)
+  println(s.substring(0, index), s.substring(index + 1))
+  println(s.substring(0, s.size-3))
 }
